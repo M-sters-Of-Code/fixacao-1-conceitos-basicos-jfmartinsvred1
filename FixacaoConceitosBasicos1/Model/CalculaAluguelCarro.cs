@@ -6,11 +6,11 @@ namespace FixacaoConceitosBasicos1.Model
 {
     public static class CalculaAluguelCarro
     {
-        public static double Calcular(int dias, int quilometragemInicial, int quilometragemFinal)
+        public static decimal Calcular(int dias, int quilometragemInicial, int quilometragemFinal)
         {
             double valorDiaria = dias * 95;
             double valorKm = (quilometragemFinal - quilometragemInicial) * 0.35;
-            return valorDiaria + valorKm;
+            return (decimal)(valorDiaria + valorKm);
         }
     }
 }

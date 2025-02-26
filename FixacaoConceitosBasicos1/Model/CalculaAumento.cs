@@ -4,12 +4,12 @@ namespace FixacaoConceitosBasicos1.Model
 {
     public static class CalculaAumento
     {
-        public static string Calcular(double aumento, double salario)
+        public static double Calcular(double aumento, double salario)
         {
             var valorAumento = aumento* salario;
             var valorFinal = valorAumento + salario;
 
-            return $"Valor Atual: {salario} \nPercentual de aumento: {aumento*100}% \n Valor Do Aumento: {valorAumento}\n Novo Salário: {valorFinal}";
+            return valorFinal;
         }
         //Crie o programa CalculaAumento que deve solicitar o valor atual do salário e o percentual de
         //aumento.Ao final deverá exibir todas as informações: salário inicial, percentual de aumento,

@@ -15,7 +15,7 @@ namespace TestesFixacaoConceitosBasicos1
         {
             double metros = 1;
             double milimetros = metros * 1000;
-            Assert.AreEqual(MetrosMilimetros.Converter(metros), milimetros);
+            Assert.AreEqual(MetrosMilimetros.ConverteMilimetros(metros), milimetros);
         }
     }
 }

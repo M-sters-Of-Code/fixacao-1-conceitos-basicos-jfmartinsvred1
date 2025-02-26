@@ -13,10 +13,13 @@ namespace TestesFixacaoConceitosBasicos1
         [TestMethod]
         public void TesteCalculoAumento()
         {
+            #region Arrange
             double salario = 1000;
             double aumento = 0.1;
+            #endregion Arrange
+
             double salarioAumentado = salario + (salario * aumento);
-            Assert.AreEqual(CalculaAumento.Calcular(salario, aumento), salarioAumentado);
+            Assert.AreEqual(CalculaAumento.Calcular(aumento, salario), salarioAumentado);
         }
     }
 }
