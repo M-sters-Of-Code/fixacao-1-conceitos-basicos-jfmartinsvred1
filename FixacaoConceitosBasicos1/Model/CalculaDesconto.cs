@@ -9,7 +9,7 @@ namespace FixacaoConceitosBasicos1.Model
         public static string Calcular(double valor, double desconto)
         {
             var valorDesconto = valor*desconto;
-            var valorFinal = valor-desconto;
+            var valorFinal = valor-valorDesconto;
             return $"Valor Atual: {valor}\nPercentual de desconto: {desconto*100}% \nValo do desconto: {valorDesconto} \nValor Final: {valorFinal}";
         }
 

@@ -8,3 +8,11 @@
  * A classe CalculaDesconto deve ter um método estático chamado Calcular que recebe um double valor e um double desconto e retorna o valor com o desconto aplicado
  * - A classe CalculaAluguelCarro deve ter um método estático chamado Calcular que recebe um int dias, um int quilometragemInicial, um int quilometragemFinal e retorna o valor total do aluguel
  */
+
+using FixacaoConceitosBasicos1.Model;
+
+Console.WriteLine(SomaDoisNumeros.Somar(1,5));
+Console.WriteLine(MetrosMilimetros.ConverteMilimetros(5.9));
+Console.WriteLine(CalculaAumento.Calcular(0.5,1000));
+Console.WriteLine(CalculaDesconto.Calcular(1000,0.37));
+Console.WriteLine(CalculaAluguelCarro.Calcular(5,1000,2000));
